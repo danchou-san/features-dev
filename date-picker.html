@@ -1,13 +1,20 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-      <title>
-          Date Picker
-      </title>
+      <title>datepicker</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script><!-- jQuery is required -->
+        <link href="assets/datepicker-1.0.0/dist/datepicker.css" rel="stylesheet">
+        <script src="assets/datepicker-1.0.0/dist/datepicker.js"></script>
   </head>
   <body>
         <div>
-            <p>Test</p>
+          <input data-toggle="datepicker">
+          <textarea data-toggle="datepicker"></textarea>
+          <div data-toggle="datepicker"></div>
         </div>
+
+        <script>
+          $('[data-toggle="datepicker"]').datepicker();
+        </script>
   </body>
 </html>
