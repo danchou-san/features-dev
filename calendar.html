@@ -47,7 +47,24 @@
               next: 'fa-chevron-right',
               prevYear: 'fa-angle-double-left',
               nextYear: 'fa-angle-double-right'
-            }
+            },
+
+            eventClick: function(calEvent, jsEvent, view) {
+
+              alert('Event: ' + calEvent.title);
+              alert('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
+              alert('View: ' + view.name);
+
+              $(this).css('border-color', 'red');
+
+            },
+
+            events: [
+              {
+                title  : 'Verjaardag',
+                start  : '2018-10-21'
+              }
+            ]
           })
 
         });
