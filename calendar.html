@@ -36,12 +36,18 @@
           $('#calendar').fullCalendar({
             height: 650,
             themeSystem: 'bootstrap4',
-            header:
-              {
+            header: {
                 left: 'prev,next today',
                 center: 'title',
                 right: 'month,agendaWeek,agendaDay, listWeek'
-              }
+              },
+            bootstrapFontAwesome: {
+              close: 'fa-times',
+              prev: 'fa-chevron-left',
+              next: 'fa-chevron-right',
+              prevYear: 'fa-angle-double-left',
+              nextYear: 'fa-angle-double-right'
+            }
           })
 
         });
