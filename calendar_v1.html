@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel='stylesheet' href='assets/fullcalendar-1.6.4/fullcalendar/fullcalendar.css' />
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link href='css/calendar_style.css' rel='stylesheet'>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- <script src="assets/moment.js"></script> -->
@@ -17,57 +19,65 @@
 
   </head>
 
-  <body>
-      <div class="container-fluid">
-        <h1>Calendar</h1>
+  <body style="text-center">
+    <div class="container-fluid">
+      <h1>Calendar</h1>
 
-        <div id='calendar'></div>
+      <div id='calendar'></div>
 
-        <a href="index.html">Back</a>
-      </div>
+      <a href="index.html">Back</a>
+    </div>
 
-      <script>
-        $(document).ready(function(){
+    <script>
+      $(document).ready(function(){
 
-        // page is now ready, initialize the calendar...
-
-          $('#calendar').fullCalendar({
-            aspectRatio: 4,
-            // allDaySlot: false,
-            // slotMinutes: 15,
-            header: {
-                left: 'prev,next today',
-                center: 'title',
-                right: 'month,agendaWeek,agendaDay, listWeek'
-              },
-            bootstrapFontAwesome: {
-              close: 'fa-times',
-              prev: 'fa-chevron-left',
-              next: 'fa-chevron-right',
-              prevYear: 'fa-angle-double-left',
-              nextYear: 'fa-angle-double-right'
+        $('#calendar').fullCalendar({
+          height: 650,
+          // theme: true,
+          // allDaySlot: false,
+          // slotMinutes: 15,
+          header: {
+              left: 'prev,next today',
+              center: 'title',
+              right: 'month,agendaWeek,agendaDay, listWeek'
             },
 
-            eventClick: function(calEvent, jsEvent, view) {
+          bootstrapFontAwesome: {
+            close: 'fa-times',
+            prev: 'fa-chevron-left',
+            next: 'fa-chevron-right',
+            prevYear: 'fa-angle-double-left',
+            nextYear: 'fa-angle-double-right'
+          },
 
-              alert('Event: ' + calEvent.title);
-              alert('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
-              alert('View: ' + view.name);
+          eventClick: function(calEvent, jsEvent, view) {
 
-              $(this).css('border-color', 'red');
+            alert('Event: ' + calEvent.title);
+            alert('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
+            alert('View: ' + view.name);
+          },
 
+          events: [
+            {
+              title  : 'Verjaardag',
+              start  : '2018-10-21'
             },
+            {
+              title  : 'Event',
+              start  : '2018-10-21',
+              end: '2018-10-23',
+              allDay : false
+            },
+            {
+              title  : 'Event',
+              start  : '2018-10-21 12:30:00',
+              allDay : false
+            }
+          ]
+        })
 
-            events: [
-              {
-                title  : 'Verjaardag',
-                start  : '2018-10-21'
-              }
-            ]
-          })
-
-        });
-      </script>
+      });
+    </script>
   </body>
 
 </html>
