@@ -10,23 +10,24 @@
   </head>
   <body>
         <div class="test" style="font-family: 'Quicksand';">
-          <div id="test"data-toggle="datepicker"></div>
+          <input class="" id="test" data-toggle="datepicker">
+
         </div>
         <a href="index.html">Back</a>
 
-        <script>
-		$('#test').datepicker({
-				inline: true,
-				format: 'dd/mm/yyyy'
-		  });
-		  $('#test').datepicker('getDate', true);
+    <script>
+      $(document).ready(function() {
+      $('[data-toggle="datepicker"]').datepicker({pick: function(e){
+          inline: true,
+          container: "testtest"
+        }});
+      });
+    </script>
 
-          //$('[data-toggle="datepicker"]').datepicker();
-        </script>
-		<style>
-			.datepicker-inline{
-        margin:auto;
-			}
-		</style>
   </body>
 </html>
+<style>
+  .datepicker-inline{
+    margin:auto;
+  }
+</style>
