@@ -5,16 +5,29 @@
         <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script><!-- jQuery is required -->
         <link href="assets/datepicker-1.0.0/dist/datepicker.css" rel="stylesheet">
         <script src="assets/datepicker-1.0.0/dist/datepicker.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
   </head>
   <body>
-        <div>
-          <input data-toggle="datepicker">
-          <textarea data-toggle="datepicker"></textarea>
-          <div data-toggle="datepicker"></div>
+        <div class="test" style="font-family: 'Quicksand';">
+          <div id="test"data-toggle="datepicker"></div>
         </div>
 
         <script>
-          $('[data-toggle="datepicker"]').datepicker();
+		$('#test').datepicker({
+				inline: true,
+				format: 'dd/mm/yyyy'
+		  });
+		  $('#test').datepicker('getDate', true);
+		  console.log();
+          //$('[data-toggle="datepicker"]').datepicker();
+		  
         </script>
+		<style>
+			.datepicker-inline{
+				border-style:solid;
+				border-width:1px;
+				border-color:black;
+			}
+		</style>
   </body>
 </html>
