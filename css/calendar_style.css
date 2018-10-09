@@ -16,11 +16,11 @@
 }
 
 .fc-first {
-    border-left: none;
+    /* border-left: none; */
 }
 
 .fc-last {
-    border-right: none;
+    /* border-right: none; */
 }
 
 .fc-state-highlight {
