@@ -15,22 +15,67 @@
   </head>
 
   <body>
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Select activities</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <label><input type="checkbox"> hallo</label>
+            <br>
+            <label><input type="checkbox"> hallo</label>
+            <br>
+            <label><input type="checkbox"> hallo</label>
+            <br>
+            <label><input type="checkbox"> hallo</label>
+            <br>
+            <label><input type="checkbox"> hallo</label>
+            <br>
+            <label><input type="checkbox"> hallo</label>
+            <br>
+            <label><input type="checkbox"> hallo</label>
+            <br>
+            <label><input type="checkbox"> hallo</label>
+            <br>
+            <label><input type="checkbox"> hallo</label>
+            <br>
+            <label><input type="checkbox"> hallo</label>
+            <br>
+            <label><input type="checkbox"> hallo</label>
+            <br>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="container-fluid">
       <h1>Color picker</h1>
 
-      <button id="button" type="button" data-toggle="popover" class="btn btn-default" style="background-color:#D50000; border-radius:500px;" value=""></button>
-      <span> Ariano Wongsosetro</span>
-      <a href="https://google.com" class="fa fa-eye"></a>
+      <button id="button" type="button" data-toggle="popover" class="btn btn-default" style="background-color:#D50000; border-radius:500px;"></button>
+      <input type="checkbox">
+      <span class="link-name" data-toggle="modal" data-target="#exampleModalCenter"> Ariano Wongsosetro</span>
+      <!-- <a href="https://google.com" class="fa fa-eye"></a> -->
       <br>
 
-      <button id="button2" type="button" data-toggle="popover" class="btn btn-default" style="background-color:#D50000; border-radius:500px;" value=""></button>
-      <span> Kevin Fiolet</span>
-      <a href="https://google.com" class="fa fa-eye"></a>
+      <button id="button2" type="button" data-toggle="popover" class="btn btn-default" style="background-color:#D50000; border-radius:500px;"></button>
+      <input type="checkbox">
+      <span class="link-name" data-toggle="modal" data-target="#exampleModalCenter"> Kevin Fiolet</span>
+      <!-- <a href="https://google.com" class="fa fa-eye"></a> -->
       <br>
 
-      <button id="button3" type="button" data-toggle="popover" class="btn btn-default" style="background-color:#D50000; border-radius:500px;" value=""></button>
-      <span> Daan de Wit</span>
-      <a href="https://google.com" class="fa fa-eye"></a>
+      <button id="button3" type="button" data-toggle="popover" class="btn btn-default" style="background-color:#D50000; border-radius:500px;"></button>
+      <input type="checkbox">
+      <span class="link-name" data-toggle="modal" data-target="#exampleModalCenter"> Daan de Wit</span>
+      <!-- <a href="https://google.com" class="fa fa-eye"></a> -->
       <br>
 
       <a href="index.html">Back</a>

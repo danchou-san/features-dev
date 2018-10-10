@@ -1,3 +1,13 @@
 .btn-default {
   padding: 8px;
 }
+
+.link-name {
+  cursor: pointer;
+  color: #007bff;
+}
+
+.link-name:hover {
+  color: #0056b3;
+  /* text-decoration: underline; */
+}
