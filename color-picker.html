@@ -18,7 +18,7 @@
     <div class="container-fluid">
       <h1>Color picker</h1>
 
-      <button id="button1" type="button" data-toggle="popover" class="btn btn-default" style="background-color:#D50000; border-radius:500px;" value=""></button>
+      <button id="button" type="button" data-toggle="popover" class="btn btn-default" style="background-color:#D50000; border-radius:500px;" value=""></button>
       <span> Ariano Wongsosetro</span>
       <a href="https://google.com" class="fa fa-eye"></a>
       <br>
@@ -43,18 +43,66 @@
             html : true,
             trigger: 'focus',
             content :
-            '<button type="button" data-toggle="popover" class="btn btn-default" style="background-color:#D50000; border-radius:500px" value="#D50000"></button> ' +
-            '<button type="button" data-toggle="popover" class="btn btn-default" style="background-color:#E67C73; border-radius:500px" value="#E67C73"></button>' +
-            '<br><button type="button" data-toggle="popover" class="btn btn-default" style="background-color:#F4511E; border-radius:500px" value="#F4511E"></button> ' +
-            '<button type="button" data-toggle="popover" class="btn btn-default" style="background-color:#F6BF26; border-radius:500px" value="#F6BF26"></button>' +
-            '<br><button type="button" data-toggle="popover" class="btn btn-default" style="background-color:#33B679; border-radius:500px" value="#33B679"></button> ' +
-            '<button type="button" data-toggle="popover" class="btn btn-default" style="background-color:#0B8043; border-radius:500px" value="#0B8043"></button>' +
-            '<br><button type="button" data-toggle="popover" class="btn btn-default" style="background-color:#039BE5; border-radius:500px" value="#039BE5"></button> ' +
-            '<button type="button" data-toggle="popover" class="btn btn-default" style="background-color:#3F51B5; border-radius:500px" value="#3F51B5"></button>' +
-            '<br><button type="button" data-toggle="popover" class="btn btn-default" style="background-color:#7986CB; border-radius:500px" value="#7986CB"></button> ' +
-            '<button type="button" data-toggle="popover" class="btn btn-default" style="background-color:#8E24AA; border-radius:500px" value="#8E24AA"></button>' +
-            '<br><button type="button" data-toggle="popover" class="btn btn-default" style="background-color:#616161; border-radius:500px" value="#616161"></button> ' +
-            '<button type="button" data-toggle="popover" class="btn btn-default" style="background-color:#4285FF; border-radius:500px" value="#4285F4"></button>'
+            '<button id="tomato" type="button" data-toggle="popover" class="btn btn-default" style="background-color:#D50000; border-radius:500px" value="#D50000"></button> ' +
+            '<button id="flamingo" type="button" data-toggle="popover" class="btn btn-default" style="background-color:#E67C73; border-radius:500px" value="#E67C73"></button>' +
+            '<br><button id="orange" type="button" data-toggle="popover" class="btn btn-default" style="background-color:#F4511E; border-radius:500px" value="#F4511E"></button> ' +
+            '<button id="sunflower" type="button" data-toggle="popover" class="btn btn-default" style="background-color:#F6BF26; border-radius:500px" value="#F6BF26"></button>' +
+            '<br><button id="sally" type="button" data-toggle="popover" class="btn btn-default" style="background-color:#33B679; border-radius:500px" value="#33B679"></button> ' +
+            '<button id="base" type="button" data-toggle="popover" class="btn btn-default" style="background-color:#0B8043; border-radius:500px" value="#0B8043"></button>' +
+            '<br><button id="pow" type="button" data-toggle="popover" class="btn btn-default" style="background-color:#039BE5; border-radius:500px" value="#039BE5"></button> ' +
+            '<button id="blueberry" type="button" data-toggle="popover" class="btn btn-default" style="background-color:#3F51B5; border-radius:500px" value="#3F51B5"></button>' +
+            '<br><button id="lavendel" type="button" data-toggle="popover" class="btn btn-default" style="background-color:#7986CB; border-radius:500px" value="#7986CB"></button> ' +
+            '<button id="grapes" type="button" data-toggle="popover" class="btn btn-default" style="background-color:#8E24AA; border-radius:500px" value="#8E24AA"></button>' +
+            '<br><button id="graphite" type="button" data-toggle="popover" class="btn btn-default" style="background-color:#616161; border-radius:500px" value="#616161"></button> ' +
+            '<button id="getmore" type="button" data-toggle="popover" class="btn btn-default" style="background-color:#4285FF; border-radius:500px" value="#4285F4"></button>'
+        });
+
+        $(document).on("click", "#tomato", function() {
+            $('#button').css('background-color', $('#tomato').val());
+        });
+
+        $(document).on("click", "#flamingo", function() {
+            $('#button').css('background-color', $('#flamingo').val());
+        });
+
+        $(document).on("click", "#orange", function() {
+            $('#button').css('background-color', $('#orange').val());
+        });
+
+        $(document).on("click", "#sunflower", function() {
+            $('#button').css('background-color', $('#sunflower').val());
+        });
+
+        $(document).on("click", "#sally", function() {
+            $('#button').css('background-color', $('#sally').val());
+        });
+
+        $(document).on("click", "#base", function() {
+            $('#button').css('background-color', $('#base').val());
+        });
+
+        $(document).on("click", "#pow", function() {
+            $('#button').css('background-color', $('#pow').val());
+        });
+
+        $(document).on("click", "#blueberry", function() {
+            $('#button').css('background-color', $('#blueberry').val());
+        });
+
+        $(document).on("click", "#lavendel", function() {
+            $('#button').css('background-color', $('#lavendel').val());
+        });
+
+        $(document).on("click", "#grapes", function() {
+            $('#button').css('background-color', $('#grapes').val());
+        });
+
+        $(document).on("click", "#graphite", function() {
+            $('#button').css('background-color', $('#graphite').val());
+        });
+
+        $(document).on("click", "#getmore", function() {
+            $('#button').css('background-color', $('#getmore').val());
         });
       });
     </script>
