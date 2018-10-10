@@ -18,8 +18,8 @@
 
   </head>
 
-  <body style="text-center">
-    <div class="container-fluid">
+  <body>
+    <div class="container">
       <h1>Calendar</h1>
 
       <div id='calendar'></div>
@@ -35,6 +35,7 @@
           // theme: true,
           // allDaySlot: false,
           // slotMinutes: 15,
+          weekNumbers: true,
           editable: true,
           eventStartEditable: true,
           header: {
@@ -42,14 +43,6 @@
               center: 'title',
               right: 'month,agendaWeek,agendaDay, listWeek'
             },
-
-          bootstrapFontAwesome: {
-            close: 'fa-times',
-            prev: 'fa-chevron-left',
-            next: 'fa-chevron-right',
-            prevYear: 'fa-angle-double-left',
-            nextYear: 'fa-angle-double-right'
-          },
 
           eventClick: function(calEvent, jsEvent, view) {
 

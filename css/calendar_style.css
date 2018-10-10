@@ -96,3 +96,33 @@ th.fc-fri.fc-col5.fc-widget-header {
 th.fc-sat.fc-col6.fc-widget-header {
     font-size: 15px;
 }
+
+th.fc-day-header.fc-sun.fc-widget-header {
+    border: none;
+}
+
+th.fc-week-number.fc-widget-header.fc-first {
+    background-color: #67809F;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+
+th.fc-sun.fc-col0.fc-widget-header, th.fc-mon.fc-col1.fc-widget-header, th.fc-tue.fc-col2.fc-widget-header,
+th.fc-wed.fc-col3.fc-widget-header, th.fc-thu.fc-col4.fc-widget-header, th.fc-fri.fc-col5.fc-widget-header, th.fc-sat.fc-col6.fc-widget-header {
+    border: none;
+    height: 8px;
+}
+
+th.fc-agenda-axis.fc-week-number.fc-widget-header.fc-first {
+    font-size: 14px;
+}
+
+th.fc-agenda-gutter.fc-widget-header.fc-last {
+    background-color: #67809F;
+    border: none;
+}
+
+th.fc-wed.fc-col0.fc-widget-header {
+    border: none;
+}
