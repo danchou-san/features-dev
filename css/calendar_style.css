@@ -11,7 +11,7 @@
     /* border-bottom: none; */
     /* border-top: none; */
     /* background-color: #5E738B; */
-    background-color: #505050;
+    background-color: #555555;
     color: white;
     font-size: 20px;
 }
@@ -102,7 +102,7 @@ th.fc-day-header.fc-sun.fc-widget-header {
 
 th.fc-week-number.fc-widget-header.fc-first {
     /* background-color: #5E738B; */
-    background-color: #505050;
+    background-color: #484848;
     color: white;
     border: none;
     font-size: 20px;
@@ -120,7 +120,7 @@ th.fc-agenda-axis.fc-week-number.fc-widget-header.fc-first {
 
 th.fc-agenda-gutter.fc-widget-header.fc-last {
     /* background-color: #5E738B; */
-    background-color: #505050;
+    background-color: #555555;
     border: none;
 }
 
@@ -177,6 +177,7 @@ td.fc-header-left {
 h3 {
     position: absolute;
     color: white;
+    padding-left: 10px;
 }
 
 td.fc-week-number.fc-widget-content.fc-first {
@@ -218,4 +219,14 @@ th.fc-sat.fc-col0.fc-widget-header {
 
 .fc-state-active {
   opacity: 0.65;
+}
+
+td.fc-week-number.fc-widget-content.fc-first {
+    background-color: #484848;
+    border: none;
+    color: white;
+}
+
+.fc-widget-header .fc-agenda-divider-inner {
+    background: #484848;
 }
