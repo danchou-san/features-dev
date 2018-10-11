@@ -10,16 +10,18 @@
   </head>
   <body>
         <div class="test" style="font-family: 'Quicksand';">
-          <input class="" id="test" data-toggle="datepicker">
-
+          <input type="hidden" class="" id="test" data-toggle="datepicker">
+          <div class="container-datepicker" id="container-datepicker"></div>
         </div>
         <a href="index.html">Back</a>
 
     <script>
-      $(document).ready(function() {
-      $('[data-toggle="datepicker"]').datepicker({pick: function(e){
-          inline: true,
-        }});
+      $('[data-toggle="datepicker"]').datepicker({
+        autoShow:true,
+        autoHide:false,
+        inline: true,
+        container: '#container-datepicker',
+        weekStart: 1
       });
     </script>
 
